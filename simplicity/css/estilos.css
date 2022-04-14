@@ -55,6 +55,9 @@ header {text-transform: uppercase;
         /* cabeçalho fixo */
         position: sticky;
         top: 0;
+
+        /* Ajuste de profundidade (eixo Z) Quanto maior, mais a ferente fica */
+        z-index: 1000;
 }
 
 /* Regra para elemento div, com classe limitador, dentro do cabeçalho */
@@ -106,6 +109,7 @@ nav h2 a:focus,
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: whitesmoke ;
 }
 
 /* Seletor especifico, que somente funcionará com as duas classes juntas (.links-menu) e (.aberto), que será acionado na programação javascript */
