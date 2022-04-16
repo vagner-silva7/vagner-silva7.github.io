@@ -3,15 +3,14 @@
 /* Alterando o box model - width / height / padding / border para todos elementos da pagina */
 *, *::after, *::before { box-sizing: border-box; }
 
-html {font-size: 12px;}
-
-body {background-color: lightgray;
+hmtl, body {background-color: lightgray;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 1rem;
+      font-size: 12px;
       margin-right: 0.5rem;
       margin-left: 0.5rem;
-      margin-top: 7rem;
+      margin-top: 5rem;
       margin-bottom: auto;
+      line-height: 18px;
 }
         
 img {width: 4.5rem;
@@ -60,9 +59,9 @@ nav h2 a:focus,
 /* Nos casos de alinhamentos, centralizado, utilizar o flex */
 .links-menu a { color: black;
       font-weight: bold;
-      font-size: 1rem;
+      font-size: 0.75rem;
       height: 1.5rem;
-      width: 20rem;
+      width: 14.5rem;
       display: flex;
 }
 
@@ -72,4 +71,26 @@ border-bottom: 5px solid chocolate;
 border-top: 5px solid chocolate;
 border-left: 5px solid chocolate;
 border-right: 5px solid chocolate;
+}
+
+
+@media screen and (min-width: 1000px) {
+      /* regras css, quando estiver acima da largura 1000px, alterar para: */
+hmtl, body {background-color: lightgray;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 17px;
+      margin-right: 1.5rem;
+      margin-left: 0.5rem;
+      margin-top: 5rem;
+      margin-bottom: auto;
+      line-height: 25px;
+}
+
+/* Nos casos de alinhamentos, centralizado, utilizar o flex */
+.links-menu a { color: black;
+      font-weight: bold;
+      font-size: 0.75rem;
+      height: 1.5rem;
+      width: 14.5rem;
+      display: flex;
 }
