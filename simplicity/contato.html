@@ -174,8 +174,10 @@
                     <div>
                         <!-- instrução do caixa (Mensagem:)  -->
                         <!-- for será igual id -->
-                        <label for="mensagem">Mensagem:</label> <br>
-                        <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea>
+                        <label for="mensagem">Mensagem: 
+                            <span id="maximo"> (restam <b id="caracteres">100</b> caracteres)</span>
+                        </label> <br>
+                        <textarea maxlenght="100" name="mensagem" id="mensagem" cols="20" rows="5"></textarea>
 
                     </div>
 
