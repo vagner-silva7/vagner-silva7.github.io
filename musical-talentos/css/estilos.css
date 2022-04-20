@@ -82,7 +82,6 @@ address p { margin-left: 10px;
 }
 
 
-/* Formatando media query */
 @media screen and (min-width: 1000px) {
       /* regras css, quando estiver acima da largura 1000px, alterar para: */
       html, body {background-color: lightgray;
