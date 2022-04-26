@@ -1,5 +1,6 @@
 // console.log("script de contatos");
 
+
 /* JS INICIAL PARA CEP/ENDEREÇO */
 const formulario = document.querySelector("form");
 const inputCep = formulario.querySelector("#cep");
