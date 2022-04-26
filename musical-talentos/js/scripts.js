@@ -54,3 +54,93 @@ botaoLocalizar.addEventListener("click", function(event){
 
 
 });
+
+// Biblioteca ou lib (vanillamasker) para ajustar cep
+
+// https://github.com/vanilla-masker/vanilla-masker/
+
+// download script
+
+// minified version
+
+// aparecera script, salvar todo o script com botão direito
+
+// Olhar documentação antes de usar a biblioteca e as funções
+
+VMasker(inputCep).maskPattern("99999-999");
+VMasker(inputTelefone).maskPattern("(99) 9999-9999");
+
+// Obs.: Celular acrescentar no formato um 9. exemplo: ("(99) 99999-9999")
+
+
+// Programação do contador de caracteres do campo mensagem:
+
+const spanMaximo = formulario.querySelector("#maximo");
+const bCaracteres = formulario.querySelector("#caracteres");
+const textMensagem = formulario.querySelector("#mensagem");
+
+    // determinar a quantidade maxima de caracter digitados no campo mensagem, variando ao digitar ou no unput
+    let quantidade = 100;
+
+    // Evento para detectar a digitação ou entrada de caracter no campo
+    textMensagem.addEventListener("input", function(){
+        
+        // Capturando o que for digitado
+        let conteudo = textMensagem.value
+
+        // Criando uma contagem regressiva
+        let contagem = quantidade - conteudo.length;
+
+        // Adicionando contagem ao elemento HTML - restam 100 caracteres
+        bCaracteres.textContent = contagem; 
+
+            // Se for igual a zero = caracter contagem e borda ficará vermelho (red), se for maior ficará preto (black)
+            //  dois iguais é comparação ==
+            if(contagem == 0){ 
+                bCaracteres.style.color = "red";
+                textMensagem.style.boxShadow = "red 0 0 10px"
+            } else { 
+                bCaracteres.style.color = "black";
+                textMensagem.style.boxShadow = "black 0 0 10px"
+            };
+
+
+    });
+
+
+
+
+
+
+    // Programação do envio de dados ao formspree.io (envio de dados para o email cadastrado npo site)
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Obrigado por enviar!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! Problema ao enviar. Tente mais tarde."
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! Problema ao enviar. Tente mais tarde."
+      });
+    }
+    
+    form.addEventListener("submit", handleSubmit)
