@@ -80,7 +80,7 @@ const bCaracteres = formulario.querySelector("#caracteres");
 const textMensagem = formulario.querySelector("#mensagem");
 
     // determinar a quantidade maxima de caracter digitados no campo mensagem, variando ao digitar ou no unput
-    let quantidade = 100;
+    let quantidade = 1000;
 
     // Evento para detectar a digitação ou entrada de caracter no campo
     textMensagem.addEventListener("input", function(){
