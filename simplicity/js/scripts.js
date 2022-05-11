@@ -11,110 +11,83 @@ const inputEstado = formulario.querySelector("#estado");
 const bStatus = formulario.querySelector("#status");
 const botaoLocalizar = formulario.querySelector("#localizar-cep");
 
-// Criar evento botão localizar - click
 botaoLocalizar.addEventListener("click", function(event){
     event.preventDefault();
+    // Entre no site: viacep.com.br
 
-    // Pesquisar no site webservice.com.br e as exigencia para pesquisa, resposta será em objeto do javascript - formato json
-
-    // pegar cep digitado no formulario .value na variavel
+    /* Pegar o cep digitado */
     let cep = inputCep.value;
 
-    // enviar cep padrão da API webservice.com.br - formato json
+    /* CEP no padrão da API */
     let url = `https://viacep.com.br/ws/${cep}/json/`;
+    //let url = "https://viacep.com.br/ws/"+cep+"/json/";
 
-    // console.log(url); teste realizado
+    /* Ajax: comunicação assíncrona com
+    o ViaCEP usando a função chamada fetch. */
 
-    
-    
-    // Processo Ajax: ou comunicação assincrona com o viaCep. Processo a resposta do cep sem recarregar a pagina (função fetch)
-
-    // 1) Acessar a conexão com a API (viaCep)
+    // 1) Fazer a conexão com a API (ou acessar)
     fetch(url)
-    
-        // 2) Recuper a resposta desse acesso no formato json
+
+        // 2) E então, recupere a resposta do acesso no formato JSON
         .then(resposta => resposta.json())
         
             // 3) E então, mostre os dados
             .then(dados => {
-
-                if("erro" in dados){
-                    bStatus.innerHTML = "Cep não encontrado";
-                    // focus aparece mensagem
+                if ( "erro" in dados ) {
+                    bStatus.innerHTML = "CEP não encontrado!";
                     inputCep.focus();
                 } else {
-                    bStatus.innerHTML = "Cep encontrado";
-                    inputEndereco.value = dados.logradouro;
+                    bStatus.innerHTML = "CEP encontrado!";
+                    inputEndereco.value = dados.logradouro;                    
                     inputBairro.value = dados.bairro;
                     inputCidade.value = dados.localidade;
                     inputEstado.value = dados.uf;
                 }
             });
-
-
 });
 
 
-
-// Biblioteca ou lib (vanillamasker) para ajustar cep
-
-// https://github.com/vanilla-masker/vanilla-masker/
-
-// download script
-
-// minified version
-
-// aparecera script, salvar todo o script com botão direito
-
-// Olhar documentação antes de usar a biblioteca e as funções
-
+/* Lib VanillaMasker:
+https://github.com/vanilla-masker/vanilla-masker */
 VMasker(inputCep).maskPattern("99999-999");
 VMasker(inputTelefone).maskPattern("(99) 9999-9999");
 
-// Obs.: Celular acrescentar no formato um 9. exemplo: ("(99) 99999-9999")
 
-
-// Programação do contador de caracteres do campo mensagem:
-
+/* Programação do contador de caracteres
+do campo mensagem */
 const spanMaximo = formulario.querySelector("#maximo");
 const bCaracteres = formulario.querySelector("#caracteres");
 const textMensagem = formulario.querySelector("#mensagem");
 
-    // determinar a quantidade maxima de caracter digitados no campo mensagem, variando ao digitar ou no unput
-    let quantidade = 100;
+// Determinar a quantidade máxima de caracteres
+let quantidade = 100;
 
-    // Evento para detectar a digitação ou entrada de caracter no campo
-    textMensagem.addEventListener("input", function(){
-        
-        // Capturando o que for digitado
-        let conteudo = textMensagem.value
+// Evento para detectar a digitação (entrada) no campo
+textMensagem.addEventListener("input", function(){
+    
+    // Capturando o que for digitado
+    let conteudo = textMensagem.value;
 
-        // Criando uma contagem regressiva
-        let contagem = quantidade - conteudo.length;
+    // Criando uma contagem regressiva
+    let contagem = quantidade - conteudo.length;
 
-        // Adicionando contagem ao elemento HTML - restam 100 caracteres
-        bCaracteres.textContent = contagem; 
+    // Adicionando a contagem ao elemento HTML
+    bCaracteres.textContent = contagem;
 
-            // Se for igual a zero = caracter contagem e borda ficará vermelho (red), se for maior ficará preto (black)
-            //  dois iguais é comparação ==
-            if(contagem == 0){ 
-                bCaracteres.style.color = "red";
-                textMensagem.style.boxShadow = "red 0 0 10px"
-            } else { 
-                bCaracteres.style.color = "black";
-                textMensagem.style.boxShadow = "black 0 0 10px"
-            };
-
-
-    });
+    if (contagem == 0) {
+        bCaracteres.style.color = "red";
+        textMensagem.style.boxShadow = "red 0 0 10px";
+    } else {
+        bCaracteres.style.color = "black";
+        textMensagem.style.boxShadow = "black 0 0 10px";
+    }
+});
 
 
 
 
-
-
-    // Programação do envio de dados ao formspree.io (envio de dados para o email cadastrado npo site)
-    var form = document.getElementById("my-form");
+/* Programação do Formspree */
+var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
       event.preventDefault();
@@ -135,12 +108,12 @@ const textMensagem = formulario.querySelector("#mensagem");
             if (Object.hasOwn(data, 'errors')) {
               status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
             } else {
-              status.innerHTML = "Oops! Problema ao enviar. Tente mais tarde."
+              status.innerHTML = "Oops! Deu ruim! Tente novamente mais tarde"
             }
           })
         }
       }).catch(error => {
-        status.innerHTML = "Oops! Problema ao enviar. Tente mais tarde."
+        status.innerHTML = "Oops! There was a problem submitting your form"
       });
     }
     form.addEventListener("submit", handleSubmit)
