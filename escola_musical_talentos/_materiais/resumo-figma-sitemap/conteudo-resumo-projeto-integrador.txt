@@ -1,0 +1,86 @@
+Site tem o objetivo de divulgação do projeto "Musical Talentos", para atrair alunos e também patrocinio para manutenção dos instrumentos e aprimoramento do projeto.
+
+
+
+Estrutura do site:
+
+
+Pagina Home
+
+
+
+	1. Apresentação do projeto: 
+
+	O projeto "Musical Talentos" oferta aula de música gratuita para todas as idades, aos sábados. Com o objetivo de:
+
+     		1.a. Atrair alunos 
+		1.b. Atrair patrocinio para manutenção dos instrumentos e aprimoramento do projeto.
+
+
+	2. Apresentação da escola:
+
+	Escola Estadual José Candido de Souza, localizada na Rua Diana, 1070 - Pompéia - São Paulo/SP
+
+		link https://goo.gl/maps/iBowqF7gKkTKvnMLA
+
+
+	3. Apresentação do professor e alunos:
+
+	No momento, tem 1 professor/coordenador, Valmir Ricardo e 64 alunos inscritos em 3 turnos:
+
+
+	4. Aulas ministradas:
+
+	Duas horas de aula aos sabados, dividido em teoria, prática e ensaio (A escola cede o instrumento para o aluno que não tiver).
+
+	Horários das aulas:
+
+	08h30 as 10h30
+	10h30 ao 12h30
+	14h30 as 16h30
+
+
+	5. Apresentação dos instrumentos:
+	- teclado
+	- violino
+	- violoncelo
+	- viola de arco
+	- violão
+	- flauta soprano
+	- flauta contrato
+	- escaleta
+
+
+	6. Patrocinador atual: Faculdade de Guarulhos.
+
+
+
+Pagina de Inscrições
+Formulário de inscrição
+
+Pagina Blog:
+Conteúdo sobre cada instrumento, fotos e vídeos explicativos
+Conteúdo sobre o projeto, seus alunos e sobre outros projetos de sucesso
+
+Pagina Galeria:
+Fotos/ Vídeos
+
+Pagina Patrocinadores
+Logos
+
+Pagina Contato:
+Formulário de contato
+
+
+
+Sites referência:
+
+https://emesp.org.br/
+https://www.prefeitura.sp.gov.br/cidade/secretarias/cultura/fundacao_theatro_municipal/escola_de_musica/index.php
+https://theatromunicipal.org.br/pt-br/escola-municipal-de-musica/
+https://emt.com.br/cursos/
+https://www.escolavirtualdemusica.com.br/blog/
+
+
+
+
