@@ -1,0 +1,120 @@
+
+
+Instalar o programa MySQL Workbench 8.0 CE
+
+	https://dev.mysql.com/downloads/workbench/
+
+Acessar no navegador o código:
+
+	http://localhost/phpmyadmin
+
+-------------------------------------------------------------
+
+Criar diagrama logico
+
+
+Entidades / tabelas:
+
+- fabricantes: id type: int, nome type varchar(45)
+
+- produtos: id, nome, preço, quantidade, descrição, fabricante_id
+
+
+
+duplo clique (MySQL model)
+
+new model (para criar relacionamento de tabelas)
+
+Add diagram (duplo clique)
+
+renomear ou editar new table, botao direito
+
+................................................................
+-								-
+- criar primeira tabela - colunas abaixo, clicando 2 vezes	-
+-								-
+................................................................
+
+- colum name (exemplo: id) campo primario
+
+- Data type (int)
+
+- pk
+
+- NN (obrigatorio)
+
+- AI
+
+.........................................
+
+- colum name (exemplo: nome)
+
+- Data type (varchar(45) )
+
+- NN (obrigatorio)
+
+
+----------------------------------------------------------------
+-								-
+-  criar segunda tabela - colunas abaixo, clicando 2 vezes	-
+-								-
+................................................................
+
+- colum name (exemplo: id) campo primario
+
+- Data type (int)
+
+- pk (chave primaria)
+
+- NN (obrigatorio)
+
+- AI (auto-incrementado)
+
+.........................................
+
+- colum name (exemplo: nome)
+
+- Data type (varchar(45) )
+
+- NN (obrigatorio)
+
+.........................................
+
+- colum name (exemplo: preco)
+
+- Data type (decimal(8,2) )
+
+- NN (obrigatorio)
+
+.........................................
+
+- colum name (exemplo: quantidade)
+
+- Data type (smallint)   ---> smallint (milhares) ---> tinyint (centena)
+
+.........................................
+
+- colum name (exemplo: descricao)
+
+- Data type (text(1000) )
+
+- NN (obrigatorio)
+
+.........................................
+
+
+Relacionamento ( 1:N ) ou ( 1:1 ) ou ( N:N )
+
+1 = representa a quantidade ou unidade
+N = representa diversos
+
+Critério: cada fabricante pode possuir diversos produtos
+
+( 1: N ) ou seja, um fabricante para muitos produtos
+
+
+
+
+
+
+
