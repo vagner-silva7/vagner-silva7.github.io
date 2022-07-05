@@ -1,0 +1,13 @@
+000webhost (banco de dados)
+
+
+servidor localhost
+
+usuario id19078578_vagner
+
+senha 08.Wireframe
+
+banco id19078578_microblog
+
+https://microblog-vagner.000webhostapp.com/
+
