@@ -1,0 +1,28 @@
+
+<!-- usuario 000webhost é -->
+
+<!-- vagner.silva7@hotmail.com -->
+ 
+
+
+
+<!-- nome da base de dados é -->
+
+<!-- id19220864_empresa_sol -->
+
+<!-- nome do usuario da base de dados é -->
+
+<!-- id19220864_empresa_sol_vagner -->
+
+<!-- senha da base de dados é -->
+
+<!-- 08.Wireframe -->
+
+<!-- Hospedagem de banco de dados é -->
+
+<!-- localhost -->
+
+
+<!-- site é -->
+
+<!-- https://sol-digitacoes.000webhostapp.com/ -->
