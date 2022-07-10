@@ -1,25 +1,17 @@
-<!-- usuario 000webhost é -->
+000webhost (banco de dados)
 
-<!-- musicaltalentos.senac@gmail.com -->
- 
-<!-- senha 000webhost é --> 
+-------------------------------------
+musicaltalentos.senac@gmail.com
 
 <!-- GMAIL@123 -->
 
+-----------------------------------------------------
+servidor localhost
 
-<!-- nome da base de dados é -->
+usuario id19247009_musical_talentos_noticias_usuarios
 
-<!-- id19184316_musical_talentos_noticias -->
+senha Gmail@123_Gmail@123
 
-<!-- nome do usuario da base de dados é -->
+banco id19247009_musical_talentos_noticias 	
 
-<!-- id19184316_musical_talentos_noticias_usuarios -->
-
-<!-- senha da base de dados é -->
-
-<!-- Gmail@123_Gmail@123 -->
-
-
-<!-- site é -->
-
-<!-- https://musicaltalentos.000webhostapp.com/ -->
+ttps://musical-talentos.000webhostapp.com/
