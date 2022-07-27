@@ -14,4 +14,4 @@ senha Gmail@123_Gmail@123
 
 banco id19247009_musical_talentos_noticias 	
 
-ttps://musical-talentos.000webhostapp.com/
+https://musical-talentos.000webhostapp.com/

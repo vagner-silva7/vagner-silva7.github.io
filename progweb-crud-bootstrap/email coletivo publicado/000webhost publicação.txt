@@ -1,15 +1,15 @@
 000webhost (banco de dados)
 
 -------------------------------------
-vagner.fsilva7@gmail.com
+vagner.fsilva7@hotmail.com
 
 -----------------------------------------------------
 servidor localhost
 
-usuario id19330063_empresa_sol_usuario
+usuario id19256447_vendas_vagner_usuarios
 
 senha 08.Wireframe
 
-banco id19330063_empresa_sol	
+banco id19256447_vendas_vagner
 
-https://sol-digitacao-post.000webhostapp.com//
+https://progweb-crud-bootstrap2.000webhostapp.com/
