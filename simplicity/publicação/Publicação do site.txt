@@ -1,5 +1,0 @@
-netlify
-
-vagner.fsilva7@gmail.com
-
-https://cerulean-truffle-ef32e9.netlify.app/
